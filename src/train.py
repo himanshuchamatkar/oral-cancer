@@ -18,10 +18,11 @@ except ImportError:
     print("Warning: xgboost package is not installed or failed to load. falling back to scikit-learn models.")
 
 # Constants
-PROCESSED_DIR = os.path.join("D:\\arishaa jii", "data", "processed")
-MODELS_DIR = os.path.join("D:\\arishaa jii", "models")
-REPORTS_DIR = os.path.join("D:\\arishaa jii", "reports")
-CONFIG_DIR = os.path.join("D:\\arishaa jii", "config")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROCESSED_DIR = os.path.join(PROJECT_ROOT, "data", "processed")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
+REPORTS_DIR = os.path.join(PROJECT_ROOT, "reports")
+CONFIG_DIR = os.path.join(PROJECT_ROOT, "config")
 
 def ensure_directories():
     os.makedirs(MODELS_DIR, exist_ok=True)

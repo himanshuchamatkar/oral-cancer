@@ -7,10 +7,11 @@ from src.predict import predict_risk, DEFAULT_LOW_THRESHOLD, DEFAULT_HIGH_THRESH
 from src.explainability import explain_prediction
 
 # Constants
-REPORTS_DIR = os.path.join("D:\\arishaa jii", "reports")
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+REPORTS_DIR = os.path.join(PROJECT_ROOT, "reports")
 FIGURES_DIR = os.path.join(REPORTS_DIR, "figures")
-MODELS_DIR = os.path.join("D:\\arishaa jii", "models")
-CONFIG_DIR = os.path.join("D:\\arishaa jii", "config")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
+CONFIG_DIR = os.path.join(PROJECT_ROOT, "config")
 
 # Page Configuration
 st.set_page_config(

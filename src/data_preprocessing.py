@@ -11,11 +11,12 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
 # Constants
-DATA_DIR = os.path.join("D:\\arishaa jii", "data")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 RAW_DIR = os.path.join(DATA_DIR, "raw")
 PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
-MODELS_DIR = os.path.join("D:\\arishaa jii", "models")
-CONFIG_DIR = os.path.join("D:\\arishaa jii", "config")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
+CONFIG_DIR = os.path.join(PROJECT_ROOT, "config")
 
 DATASET_URL = "https://raw.githubusercontent.com/BhaveshBhakta/Oral-Cancer-Prediction-Using-ML/main/oral_cancer_prediction_dataset.csv"
 RAW_FILE_PATH = os.path.join(RAW_DIR, "oral_cancer_prediction_dataset.csv")

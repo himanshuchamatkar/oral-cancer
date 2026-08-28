@@ -5,8 +5,9 @@ import numpy as np
 import joblib
 
 # Constants
-MODELS_DIR = os.path.join("D:\\arishaa jii", "models")
-CONFIG_DIR = os.path.join("D:\\arishaa jii", "config")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
+CONFIG_DIR = os.path.join(PROJECT_ROOT, "config")
 
 # Default thresholds
 DEFAULT_LOW_THRESHOLD = 0.33

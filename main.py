@@ -25,8 +25,9 @@ app.add_middleware(
 )
 
 # Constants
-REPORTS_DIR = os.path.join("D:\\arishaa jii", "reports")
-MODELS_DIR = os.path.join("D:\\arishaa jii", "models")
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+REPORTS_DIR = os.path.join(PROJECT_ROOT, "reports")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
 
 class RiskAssessmentRequest(BaseModel):
     Age: int

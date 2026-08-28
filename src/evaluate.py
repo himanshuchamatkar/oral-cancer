@@ -8,9 +8,10 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, roc_curve, auc
 
 # Constants
-PROCESSED_DIR = os.path.join("D:\\arishaa jii", "data", "processed")
-MODELS_DIR = os.path.join("D:\\arishaa jii", "models")
-REPORTS_DIR = os.path.join("D:\\arishaa jii", "reports")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROCESSED_DIR = os.path.join(PROJECT_ROOT, "data", "processed")
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")
+REPORTS_DIR = os.path.join(PROJECT_ROOT, "reports")
 FIGURES_DIR = os.path.join(REPORTS_DIR, "figures")
 
 def ensure_directories():
