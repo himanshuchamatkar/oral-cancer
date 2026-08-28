@@ -1,0 +1,28 @@
+{
+    "model_type": "DecisionTreeClassifier",
+    "model_name": "Decision Tree",
+    "features_used": [
+        "Age",
+        "Gender",
+        "Tobacco Use",
+        "Alcohol Consumption",
+        "Betel Quid Use",
+        "HPV Infection",
+        "Chronic Sun Exposure",
+        "Poor Oral Hygiene",
+        "Diet (Fruits & Vegetables Intake)",
+        "Family History of Cancer",
+        "Compromised Immune System",
+        "Oral Lesions",
+        "Unexplained Bleeding",
+        "Difficulty Swallowing",
+        "White or Red Patches in Mouth"
+    ],
+    "training_date": "2026-08-28 23:26:18",
+    "metrics": {
+        "accuracy": 0.4963791580806594,
+        "recall": 0.5992916174734356,
+        "f1_score": 0.542713567839196,
+        "roc_auc": 0.4987477269434243
+    }
+}

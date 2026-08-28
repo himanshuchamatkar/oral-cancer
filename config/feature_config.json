@@ -1,0 +1,164 @@
+{
+  "Age": {
+    "label": "Age",
+    "type": "number",
+    "min": 1,
+    "max": 120,
+    "default": 35,
+    "dataset_column": "Age",
+    "description": "Age of the individual in years."
+  },
+  "Gender": {
+    "label": "Gender",
+    "type": "select",
+    "options": ["Male", "Female"],
+    "dataset_column": "Gender",
+    "description": "Biological sex of the individual."
+  },
+  "Tobacco Use": {
+    "label": "Tobacco Use",
+    "type": "select",
+    "options": ["Never", "Former", "Current"],
+    "mapping": {
+      "Never": "No",
+      "Former": "Yes",
+      "Current": "Yes"
+    },
+    "dataset_column": "Tobacco Use",
+    "description": "History or current use of tobacco products."
+  },
+  "Alcohol Consumption": {
+    "label": "Alcohol Consumption",
+    "type": "select",
+    "options": ["Never", "Former", "Current"],
+    "mapping": {
+      "Never": "No",
+      "Former": "Yes",
+      "Current": "Yes"
+    },
+    "dataset_column": "Alcohol Consumption",
+    "description": "History or current consumption of alcoholic beverages."
+  },
+  "Betel Quid Use": {
+    "label": "Betel Quid / Areca Nut Use",
+    "type": "select",
+    "options": ["Never", "Former", "Current"],
+    "mapping": {
+      "Never": "No",
+      "Former": "Yes",
+      "Current": "Yes"
+    },
+    "dataset_column": "Betel Quid Use",
+    "description": "Chewing betel quid, areca nut, or related preparations."
+  },
+  "HPV Infection": {
+    "label": "HPV Infection Status",
+    "type": "select",
+    "options": ["No", "Yes", "Unknown"],
+    "mapping": {
+      "No": "No",
+      "Yes": "Yes",
+      "Unknown": null
+    },
+    "dataset_column": "HPV Infection",
+    "description": "Infection with Human Papillomavirus."
+  },
+  "Chronic Sun Exposure": {
+    "label": "Chronic Sun Exposure",
+    "type": "select",
+    "options": ["No", "Yes"],
+    "dataset_column": "Chronic Sun Exposure",
+    "description": "Frequent, long-term exposure to sunlight (relevant to lip cancers)."
+  },
+  "Poor Oral Hygiene": {
+    "label": "Oral Hygiene Level",
+    "type": "select",
+    "options": ["Good", "Moderate", "Poor"],
+    "mapping": {
+      "Good": "No",
+      "Moderate": "No",
+      "Poor": "Yes"
+    },
+    "dataset_column": "Poor Oral Hygiene",
+    "description": "General cleanliness and health status of the teeth and gums."
+  },
+  "Diet (Fruits & Vegetables Intake)": {
+    "label": "Dietary Habits (Fruit/Veggie Intake)",
+    "type": "select",
+    "options": ["Low", "Moderate", "High"],
+    "dataset_column": "Diet (Fruits & Vegetables Intake)",
+    "description": "Frequency of intake of fresh fruits and vegetables."
+  },
+  "Family History of Cancer": {
+    "label": "Family History of Cancer",
+    "type": "select",
+    "options": ["No", "Yes", "Unknown"],
+    "mapping": {
+      "No": "No",
+      "Yes": "Yes",
+      "Unknown": null
+    },
+    "dataset_column": "Family History of Cancer",
+    "description": "History of cancer among immediate or close relatives."
+  },
+  "Compromised Immune System": {
+    "label": "Immune System Status",
+    "type": "select",
+    "options": ["Normal", "Compromised", "Unknown"],
+    "mapping": {
+      "Normal": "No",
+      "Compromised": "Yes",
+      "Unknown": null
+    },
+    "dataset_column": "Compromised Immune System",
+    "description": "Whether the immune system is weakened due to disease, medication, or therapy."
+  },
+  "Oral Lesions": {
+    "label": "Oral Lesion Presence",
+    "type": "select",
+    "options": ["No", "Yes", "Unsure"],
+    "mapping": {
+      "No": "No",
+      "Yes": "Yes",
+      "Unsure": null
+    },
+    "dataset_column": "Oral Lesions",
+    "description": "Presence of any sores, ulcers, or persistent lesions in the mouth."
+  },
+  "Unexplained Bleeding": {
+    "label": "Unexplained Oral Bleeding",
+    "type": "select",
+    "options": ["No", "Yes", "Unsure"],
+    "mapping": {
+      "No": "No",
+      "Yes": "Yes",
+      "Unsure": null
+    },
+    "dataset_column": "Unexplained Bleeding",
+    "description": "Bleeding from the mouth or gums that occurs without obvious trauma or injury."
+  },
+  "Difficulty Swallowing": {
+    "label": "Difficulty Swallowing (Dysphagia)",
+    "type": "select",
+    "options": ["No", "Yes", "Unsure"],
+    "mapping": {
+      "No": "No",
+      "Yes": "Yes",
+      "Unsure": null
+    },
+    "dataset_column": "Difficulty Swallowing",
+    "description": "Difficulty or pain when swallowing food, liquids, or saliva."
+  },
+  "White or Red Patches in Mouth": {
+    "label": "Persistent White/Red Patches",
+    "type": "select",
+    "options": ["No", "Yes", "Unsure"],
+    "mapping": {
+      "No": "No",
+      "Yes": "Yes",
+      "Unsure": null
+    },
+    "dataset_column": "White or Red Patches in Mouth",
+    "description": "Presence of white (leukoplakia) or red (erythroplakia) patches inside the oral cavity."
+  }
+}
