@@ -5,6 +5,9 @@ const API_BASE_URL = window.location.hostname === 'localhost' || window.location
     ? 'http://localhost:8000'
     : RENDER_API_URL;
 
+const DEFAULT_LOW_THRESHOLD = 0.33;
+const DEFAULT_HIGH_THRESHOLD = 0.66;
+
 // State management
 let state = {
     apiOnline: false,
