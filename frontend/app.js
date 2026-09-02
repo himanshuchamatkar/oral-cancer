@@ -317,19 +317,26 @@ function initCharts() {
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    labels: { color: '#f8fafc' }
+                    labels: { 
+                        color: '#334155',
+                        font: { family: "'Inter', sans-serif", weight: 600, size: 12 }
+                    }
                 }
             },
             scales: {
                 x: {
-                    grid: { color: 'rgba(255,255,255,0.05)' },
-                    ticks: { color: '#94a3b8' }
+                    grid: { color: 'rgba(15, 23, 42, 0.06)' },
+                    ticks: { color: '#64748b', font: { family: "'Inter', sans-serif" } }
                 },
                 y: {
                     min: 0,
                     max: 100,
-                    grid: { color: 'rgba(255,255,255,0.05)' },
-                    ticks: { color: '#94a3b8', callback: function(value) { return value + "%" } }
+                    grid: { color: 'rgba(15, 23, 42, 0.06)' },
+                    ticks: { 
+                        color: '#64748b', 
+                        font: { family: "'Inter', sans-serif" },
+                        callback: function(value) { return value + "%" } 
+                    }
                 }
             }
         }
